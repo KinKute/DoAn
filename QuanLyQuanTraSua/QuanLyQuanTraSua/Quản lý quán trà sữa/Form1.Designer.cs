@@ -33,9 +33,9 @@ namespace Quản_lý_quán_trà_sữa
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -47,8 +47,8 @@ namespace Quản_lý_quán_trà_sữa
             // 
             // guna2DragControl1
             // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.TargetControl = this.guna2Panel1;
-            this.guna2DragControl1.TransparentWhileDrag = true;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // guna2Panel1
@@ -64,8 +64,19 @@ namespace Quản_lý_quán_trà_sữa
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(330, 605);
+            this.guna2Panel1.Size = new System.Drawing.Size(330, 729);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(107, 230);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "LOGIN";
             // 
             // btnCancel
             // 
@@ -85,7 +96,7 @@ namespace Quản_lý_quán_trà_sữa
             this.btnCancel.HoverState.Parent = this.btnCancel;
             this.btnCancel.Image = global::Quản_lý_quán_trà_sữa.Properties.Resources.cancel_40px;
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancel.Location = new System.Drawing.Point(179, 437);
+            this.btnCancel.Location = new System.Drawing.Point(178, 490);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
             this.btnCancel.Size = new System.Drawing.Size(128, 45);
@@ -109,24 +120,13 @@ namespace Quản_lý_quán_trà_sữa
             this.btnLogin.HoverState.Parent = this.btnLogin;
             this.btnLogin.Image = global::Quản_lý_quán_trà_sữa.Properties.Resources.import_48px;
             this.btnLogin.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogin.Location = new System.Drawing.Point(12, 437);
+            this.btnLogin.Location = new System.Drawing.Point(11, 490);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
             this.btnLogin.Size = new System.Drawing.Size(128, 45);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(107, 230);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LOGIN";
             // 
             // txtPass
             // 
@@ -200,12 +200,12 @@ namespace Quản_lý_quán_trà_sữa
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::Quản_lý_quán_trà_sữa.Properties.Resources.background;
+            this.guna2PictureBox1.Image = global::Quản_lý_quán_trà_sữa.Properties.Resources.background1;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(308, -62);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(324, -3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(794, 729);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(398, 729);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
@@ -214,7 +214,7 @@ namespace Quản_lý_quán_trà_sữa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1086, 605);
+            this.ClientSize = new System.Drawing.Size(722, 729);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
